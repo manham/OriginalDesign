@@ -8,6 +8,7 @@ void draw()
   head();
   eyes();
   nose();
+  hair();
 }
 void head()
 {
@@ -30,7 +31,7 @@ void head()
 	vertex(65, 140);
 	vertex(55, 200);
 	vertex(95,230);
-	endShape();
+	endShape(CLOSE);
 }
 void eyes()
 {
@@ -39,6 +40,7 @@ void eyes()
 	ellipse(135, 175, 60, 85);
 	ellipse(240, 175, 60, 85);
 	stroke(0,0,0);
+	strokeWeight(1);
 	arc(135,175,60, 85, PI, 7*PI/4);
 	arc(240, 175, 60, 85, 5*PI/4, 2*PI);
 	fill(255, 0, 0);
@@ -52,6 +54,18 @@ void eyes()
 void nose()
 {
 	stroke(0,0,0);
-	stroke
+	strokeWeight(2);
 	point(175,215);
+}
+void hair()
+{
+	strokeWeight(1);
+	fill(0, 0, 100);
+	beginShape();
+	vertex(85,150);
+	vertex(115, 150);
+	vertex(117, 140);
+	vertex(119, 150);
+	vertex
+	endShape();
 }
