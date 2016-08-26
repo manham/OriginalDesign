@@ -9,6 +9,7 @@ void draw()
   eyes();
   nose();
   hair();
+  mouth();
 }
 void head()
 {
@@ -32,6 +33,10 @@ void head()
 	vertex(55, 200);
 	vertex(95,230);
 	endShape(CLOSE);
+	fill(255, 180, 180);
+	ellipse(130, 235, 50, 25);
+	ellipse(250, 235, 50, 25);
+
 }
 void eyes()
 {
@@ -43,11 +48,11 @@ void eyes()
 	strokeWeight(1);
 	arc(135,175,60, 85, PI, 7*PI/4);
 	arc(240, 175, 60, 85, 5*PI/4, 2*PI);
-	fill(255, 0, 0);
+	fill(180,165,255);
 	ellipse(135, 175, 40,85);
 	ellipse(240, 175, 40, 85);
 	noStroke();
-	fill(155, 0, 0);
+	fill(195, 165, 255);
 	ellipse(135, 175, 20, 40);
 	ellipse(240, 175, 20, 40);
 }
@@ -62,7 +67,7 @@ void hair()
 	strokeWeight(1);
 	fill(0, 0, 100);
 	beginShape();
-	vertex(85,150);
+	vertex(95,150);
 	vertex(115, 150);
 	vertex(120, 100);
 	vertex(125, 150);
@@ -79,12 +84,25 @@ void hair()
 	vertex(285, 375);
 	vertex(305, 375);
 	vertex(335, 100);
-	vertex(305, 20);
-	vertex(105, 20);
+	vertex(300, 30);
+	vertex(195, 10);
+	vertex(90, 30);
 	vertex(65, 95);
 	vertex(55, 145);
-	vertex(105, 375);
-	vertex(125, 375);
-	vertex(85, 150);
+	vertex(95, 375);
+	vertex(115, 375);
+	vertex(95, 150);
 	endShape(CLOSE);
+}
+void mouth()
+{
+
+	line(155, 260, 183, 283);
+	line(183, 283, 215, 265);
+}
+void curtain()
+{
+	
+	fill(0,0,0)
+	rect(0,0,400, 400);
 }
