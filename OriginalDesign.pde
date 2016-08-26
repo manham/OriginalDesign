@@ -64,8 +64,27 @@ void hair()
 	beginShape();
 	vertex(85,150);
 	vertex(115, 150);
-	vertex(117, 140);
-	vertex(119, 150);
-	vertex
-	endShape();
+	vertex(120, 100);
+	vertex(125, 150);
+	vertex(165, 150);
+	vertex(170, 100);
+	vertex(175, 150);
+	vertex(215, 150);
+	vertex(220, 100);
+	vertex(225, 150);
+	vertex(265, 150);
+	vertex(270, 100);
+	vertex(275, 150);
+	vertex(295, 150);
+	vertex(285, 375);
+	vertex(305, 375);
+	vertex(335, 100);
+	vertex(305, 20);
+	vertex(105, 20);
+	vertex(65, 95);
+	vertex(55, 145);
+	vertex(105, 375);
+	vertex(125, 375);
+	vertex(85, 150);
+	endShape(CLOSE);
 }
